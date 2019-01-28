@@ -1,0 +1,36 @@
+{
+  "name": "surmon.me.native",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "dev": "npm start --reset-cache",
+    "dev:all": "npm run dev:ios && npm run dev:android",
+    "dev:ios": "react-native run-ios",
+    "dev:android": "react-native run-android",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "build:ios": "react-native bundle --entry-file index.ios.js --platform ios --bundle-output ./ios/react.bundle",
+    "build:android": "cd android && ./gradlew assembleRelease",
+    "test": "jest",
+    "release:android": "cd android && ./gradlew installRelease",
+    "postinstall": "rndebugger-open"
+  },
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-native": "^0.58.1",
+    "react-native-gifted-listview": "git+https://github.com/FaridSafi/react-native-gifted-listview.git",
+    "react-native-root-toast": "^3.0.2",
+    "react-native-simple-markdown": "^1.0.60-rc.3",
+    "react-native-vector-icons": "^6.2.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-jest": "24.0.0",
+    "babel-preset-react-native": "4.0.1",
+    "jest": "24.0.0",
+    "react-native-debugger-open": "^0.3.3",
+    "react-test-renderer": "~16.7.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

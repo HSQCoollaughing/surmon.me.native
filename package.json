@@ -11,24 +11,35 @@
     "build:ios": "react-native bundle --entry-file index.ios.js --platform ios --bundle-output ./ios/react.bundle",
     "build:android": "cd android && ./gradlew assembleRelease",
     "test": "jest",
+    "tsc": "tsc",
     "release:android": "cd android && ./gradlew installRelease",
     "postinstall": "rndebugger-open"
   },
   "dependencies": {
     "react": "^16.0.0",
     "react-native": "^0.58.1",
+    "react-native-gesture-handler": "^1.0.15",
     "react-native-gifted-listview": "git+https://github.com/FaridSafi/react-native-gifted-listview.git",
     "react-native-root-toast": "^3.0.2",
     "react-native-simple-markdown": "^1.0.60-rc.3",
-    "react-native-vector-icons": "^6.2.0"
+    "react-native-vector-icons": "^6.2.0",
+    "react-navigation": "^3.0.9"
   },
   "devDependencies": {
-    "babel": "^6.23.0",
+    "@types/jest": "^23.3.13",
+    "@types/react": "^16.7.21",
+    "@types/react-native": "^0.57.32",
+    "@types/react-native-vector-icons": "^4.6.4",
+    "@types/react-navigation": "^3.0.1",
+    "@types/react-test-renderer": "^16.0.3",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "24.0.0",
     "babel-preset-react-native": "4.0.1",
     "jest": "24.0.0",
+    "metro-react-native-babel-preset": "0.51.1",
     "react-native-debugger-open": "^0.3.3",
-    "react-test-renderer": "~16.7.0"
+    "react-test-renderer": "16.6.3",
+    "typescript": "^3.2.4"
   },
   "jest": {
     "preset": "react-native"
