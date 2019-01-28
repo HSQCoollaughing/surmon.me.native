@@ -1,9 +1,8 @@
 /**
- * Load the App component.
- *  (All the fun stuff happens in "/src/index.js")
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
+ * IOS entry.
+ * @file IOS 入口文件
+ * @module app/ios
+ * @author Surmon <https://github.com/surmon-china>
  */
 
 import { AppRegistry } from 'react-native';

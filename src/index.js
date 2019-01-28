@@ -1,28 +1,24 @@
+/**
+ * App main.
+ * @file 应用根组件
+ * @module app/main
+ * @author Surmon <https://github.com/surmon-china>
+ */
 
-import React, { Component } from 'react';
+import React from 'react';
 import { Navigator } from 'react-native';
-
-// Init Layout
 import Layout from './layouts/layout';
 
-/*
-initialRoute：初始化路由
-
-configureScene: 配置场景动画
-- FloatFromBottom
-- PushFromRight
-
-renderScene: 渲染场景
-使用动态加载组件的方式. 设置加载页面的navigator参数, 其余使用route.passProps属性传递其他参数.
-*/
-
 const AppContainer = () =>
-    <Navigator  initialRoute={{ component: Layout }}
-                configureScene={ () => Navigator.SceneConfigs.PushFromRight }
-                renderScene={ (route, navigator) => {
-                  let Component = route.component;
-                  return React.createElement(Component, { ...route.passProps, navigator })
-                }} 
-    />
+  <Navigator
+    // 初始化路由
+    initialRoute={{ component: Layout }}
+    // configureScene: 配置场景动画 FloatFromBottom | PushFromRight
+    configureScene={() => Navigator.SceneConfigs.PushFromRight}
+    // 渲染场景
+    renderScene={(route, navigator) => {
+      return React.createElement(route.component, { ...route.passProps, navigator })
+    }}
+  />
 
 export default AppContainer;

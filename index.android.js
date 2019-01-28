@@ -1,23 +1,21 @@
 /**
- * Load the App component.
- *  (All the fun stuff happens in "/src/index.js")
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
+ * Android entry.
+ * @file android 入口文件
+ * @module app/android
+ * @author Surmon <https://github.com/surmon-china>
  */
 
 import React from 'react';
 import { Navigator, AppRegistry } from 'react-native';
-
 import Welcome from './src/layouts/welcome';
 
 const AppContainer = () =>
-  <Navigator  initialRoute={{ component: Welcome }}
-              configureScene={ () => Navigator.SceneConfigs.FloatFromBottom }
-              renderScene={ (route, navigator) => {
-                let Component = route.component;
-                return React.createElement(Component, { ...route.passProps, navigator })
-              }} 
+  <Navigator
+    initialRoute={{ component: Welcome }}
+    configureScene={() => Navigator.SceneConfigs.FloatFromBottom}
+    renderScene={(route, navigator) => {
+      return React.createElement(route.component, { ...route.passProps, navigator })
+    }}
   />
 
 AppRegistry.registerComponent('blogApp', () => AppContainer);
