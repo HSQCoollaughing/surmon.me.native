@@ -597,12 +597,26 @@
   version "15.5.8"
   resolved "http://registry.npm.taobao.org/@types/prop-types/download/@types/prop-types-15.5.8.tgz#8ae4e0ea205fe95c3901a5a1df7f66495e3a56ce"
 
-"@types/react-native@^0.57.32":
+"@types/react-native-vector-icons@^4.6.4":
+  version "4.6.4"
+  resolved "http://registry.npm.taobao.org/@types/react-native-vector-icons/download/@types/react-native-vector-icons-4.6.4.tgz#83c2d88f0c2615a44b9059eb75c11f92702c1ee2"
+  dependencies:
+    "@types/react" "*"
+    "@types/react-native" "*"
+
+"@types/react-native@*", "@types/react-native@^0.57.32":
   version "0.57.32"
   resolved "http://registry.npm.taobao.org/@types/react-native/download/@types/react-native-0.57.32.tgz#5c4d43fe50f4bae81390e835209d501270b9704a"
   dependencies:
     "@types/prop-types" "*"
     "@types/react" "*"
+
+"@types/react-navigation@^3.0.1":
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/@types/react-navigation/download/@types/react-navigation-3.0.1.tgz#374db42a441f4fc50cc0c86a399e41ce4680bfd3"
+  dependencies:
+    "@types/react" "*"
+    "@types/react-native" "*"
 
 "@types/react-test-renderer@^16.0.3":
   version "16.0.3"
