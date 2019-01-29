@@ -7,7 +7,7 @@
 
 import React from 'react';
 import { Text, View } from 'react-native';
-import { Header, createStackNavigator, NavigationProp } from "react-navigation";
+import { createStackNavigator } from "react-navigation";
 // import Ionicons from 'react-native-vector-icons/Ionicons';
 // import Articles from '@app/pages/articles';
 // import Projects from '@app/pages/projects';

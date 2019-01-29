@@ -1,20 +1,20 @@
 
 import React, { Component } from 'react';
 import { BackHandler, StyleSheet, View, Text, WebView } from 'react-native';
-import colors from '@app/style/colors';
-import sizes from '@app/style/sizes';
+// import colors from '@app/style/colors';
+// import sizes from '@app/style/sizes';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.cardBackground,
+    // backgroundColor: colors.cardBackground,
     justifyContent: 'center',
     alignItems: 'center'
   },
   webview: {
     flex: 1,
-    width: sizes.screen.width,
-    height: sizes.screen.height,
+    // width: sizes.screen.width,
+    // height: sizes.screen.height,
     // marginTop: Platform.OS === 'ios' 
       // ? AppSizes.navbarHeight - 5
       // : AppSizes.navbarHeight + AppSizes.statusBarHeight
@@ -66,7 +66,7 @@ export class Guestbook extends Component {
 
     // 否则执行路由返回解析
     } else {
-      HandleBackBtnPress.bind(this)();
+      // HandleBackBtnPress.bind(this)();
     }
   }
 

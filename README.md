@@ -68,7 +68,6 @@ A react-native applaction for [surmon.me](https://surmon.me)
 
 ### 项目问题
 - run-ios失败的时候，可以需要删除ios/build文件夹重新编译
-- 不再使用`babel-plugin-module-resolver`插件，使用内fbjs模块管理别名
 - 项目出现诸多异常的时候，直接执行`. reset.sh`会自动清理缓存并重装，而后执行命令即可
 ### Icons图标库问题
 安装完毕若有异常，则需要执行`rnpm link`/`react-native link`

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { TouchableOpacity, BackAndroid, Platform, Linking, StyleSheet, Image, Text, View } from 'react-native';
 
 // External Libraries
-// import Ionicon from 'react-native-vector-icons/Ionicons';
+import Ionicon from 'react-native-vector-icons/Ionicons';
 // // import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 // Components
@@ -93,7 +93,7 @@ export class About extends Component {
           <Text style={styles.userSlogan}>{ userInfo ? userInfo.slogan : 'Talk is cheap. Show me the code.' }</Text> */}
           <View style={styles.userSocials}>
             <TouchableOpacity style={styles.userSocialItem} onPress={() => { this.openSocial('https://github.com/surmon-china')}}>
-              {/* <Ionicon name="logo-github" size={26} style={styles.userSocialIcon}/> */}
+              <Ionicon name="logo-github" />
             </TouchableOpacity>
             <TouchableOpacity style={styles.userSocialItem} onPress={() => { this.openSocial('https://stackoverflow.com/users/6222535/surmon?tab=profile')}}>
               {/* <FontAwesome name="stack-overflow" size={22} style={styles.userSocialIcon}/> */}
